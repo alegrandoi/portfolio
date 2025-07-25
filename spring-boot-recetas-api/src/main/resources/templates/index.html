@@ -6,8 +6,8 @@
 </head>
 <body>
   <h1>Recetas de Cocina</h1>
-  <!-- Enlace al formulario ajustado a la ruta web -->
-  <a th:href="@{/web/recetas/nuevo}">Crear Receta</a>
+  <!-- Enlace al formulario de creación -->
+  <a th:href="@{/recetas/nuevo}">Crear Receta</a>
   <table>
     <tr><th>Nombre</th><th>Categoría</th><th>Dieta</th><th>Calorías</th></tr>
     <tr th:each="receta : ${recetas}">
