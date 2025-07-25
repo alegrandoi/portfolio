@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Nueva Receta</title>
+</head>
+<body>
+  <h1>Crear Receta</h1>
+  <!-- Acción del formulario ajustada a la ruta web -->
+  <form th:action="@{/web/recetas}" th:object="${receta}" method="post">
+    <label>Nombre:<input th:field="*{nombre}"/></label><br/>
+    <label>Descripción:<textarea th:field="*{descripcion}"></textarea></label><br/>
+    <label>Tiempo (min):<input type="number" th:field="*{tiempoPreparacion}"/></label><br/>
+    <label>Categoría:
+      <select th:field="*{categoria}">
+        <option th:each="c : ${T(com.ejemplo.api.model.Categoria).values()}"
+                th:value="${c}" th:text="${c}"></option>
+      </select>
+    </label><br/>
+    <label>Dieta:
+      <select th:field="*{dieta}">
+        <option th:each="d : ${T(com.ejemplo.api.model.Dieta).values()}"
+                th:value="${d}" th:text="${d}"></option>
+      </select>
+    </label><br/>
+    <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>
