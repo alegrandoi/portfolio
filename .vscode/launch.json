@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "RestApiApplication",
+            "request": "launch",
+            "mainClass": "com.ejemplo.api.RestApiApplication",
+            "projectName": "spring-boot-recetas-api"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Iniciar Chrome para localhost",
