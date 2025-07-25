@@ -1,13 +1,13 @@
 package com.ejemplo.api.controller;
 
-import com.ejemplo.api.model.*;
+import com.ejemplo.api.model.Categoria;
+import com.ejemplo.api.model.Dieta;
+import com.ejemplo.api.model.Receta;
 import com.ejemplo.api.service.RecetaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,7 @@ import java.util.List;
 
 @Tag(name = "Recetas", description = "CRUD y consultas de recetas de cocina")
 @RestController
-@RequestMapping("/recetas")
+@RequestMapping("/api/recetas")  // prefijo /api para separar de la web
 @Validated
 @RequiredArgsConstructor
 public class RecetaController {
@@ -32,8 +32,8 @@ public class RecetaController {
     @GetMapping("/{id}")
     public ResponseEntity<Receta> obtener(@PathVariable Long id) {
         return service.obtener(id)
-                      .map(ResponseEntity::ok)
-                      .orElse(ResponseEntity.notFound().build());
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @Operation(summary = "Buscar recetas por nombre")
