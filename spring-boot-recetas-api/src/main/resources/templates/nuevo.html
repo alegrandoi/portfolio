@@ -6,8 +6,8 @@
 </head>
 <body>
   <h1>Crear Receta</h1>
-  <!-- Acción del formulario ajustada a la ruta web -->
-  <form th:action="@{/web/recetas}" th:object="${receta}" method="post">
+  <!-- Acción del formulario -->
+  <form th:action="@{/recetas/nuevo}" th:object="${receta}" method="post">
     <label>Nombre:<input th:field="*{nombre}"/></label><br/>
     <label>Descripción:<textarea th:field="*{descripcion}"></textarea></label><br/>
     <label>Tiempo (min):<input type="number" th:field="*{tiempoPreparacion}"/></label><br/>
