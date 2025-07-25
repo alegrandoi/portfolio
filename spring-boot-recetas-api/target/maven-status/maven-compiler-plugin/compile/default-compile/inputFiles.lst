@@ -1,0 +1,8 @@
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/repository/RecetaRepository.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/service/RecetaService.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/controller/RecetaController.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/RestApiApplication.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/model/Dieta.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/model/Categoria.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/model/Receta.java
+/workspaces/portfolio/spring-boot-recetas-api/src/main/java/com/ejemplo/api/model/Ingrediente.java
