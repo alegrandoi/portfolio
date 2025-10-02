@@ -40,7 +40,7 @@ export default function Education() {
     >
       <div className="grid gap-12">
         <div className="mx-auto max-w-3xl">
-          <h3 className="mb-6 text-center font-headline text-2xl font-bold md:text-left">
+          <h3 className="mb-6 text-center font-headline text-2xl font-bold">
             Formación Reglada
           </h3>
           <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-border">
@@ -64,12 +64,12 @@ export default function Education() {
           </div>
         </div>
         <div>
-          <h3 className="mb-6 text-center font-headline text-2xl font-bold md:text-left">
+          <h3 className="mb-6 text-center font-headline text-2xl font-bold">
             Cursos Recientes (2024-2025)
           </h3>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {courses.map((course, index) => (
-              <Card key={index} className="flex items-center gap-4 p-4">
+              <Card key={index} className="flex items-center justify-center gap-4 p-4">
                 <BookOpen className="h-6 w-6 shrink-0 text-accent" />
                 <p className="font-medium">{course}</p>
               </Card>
