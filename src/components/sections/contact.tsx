@@ -22,7 +22,7 @@ export default function Contact() {
           </Button>
           <Button asChild variant="outline" size="icon" className="h-12 w-12">
             <a
-              href="https://github.com/zzalejandro3"
+              href="https://github.com/alegrandoi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -32,7 +32,7 @@ export default function Contact() {
           </Button>
           <Button asChild variant="outline" size="icon" className="h-12 w-12">
             <a
-              href="https://www.linkedin.com/in/alejandro-rodriguez-gomez-dev/"
+              href="https://www.linkedin.com/in/alejandro-rodríguez-gómez-b5401029b"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
