@@ -12,7 +12,7 @@ const experiences = [
   {
     role: 'Desarrollador Java',
     company: 'Tier 1 Technology',
-    period: '2024 - Presente',
+    period: '2024',
     tasks: [
       'Desarrollo de aplicaciones a medida con Java y Spring Boot.',
       'Creación y mantenimiento de APIs REST.',
