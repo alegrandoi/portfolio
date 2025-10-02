@@ -11,10 +11,10 @@ export default function Hero() {
         <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
           Alejandro Rodríguez Gómez
         </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground md:text-xl">
+        <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
           Estudiante de Ingeniería Informática y Desarrollador Java.
         </p>
-        <p className="max-w-[700px] text-xl font-medium text-primary md:text-2xl">
+        <p className="mx-auto max-w-[700px] text-xl font-medium text-primary md:text-2xl">
           “Apasionado del software, el aprendizaje continuo y los retos
           tecnológicos.”
         </p>
