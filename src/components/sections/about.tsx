@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 export default function About() {
   return (
     <SectionWrapper id="about" title="Sobre Mí">
-      <div className="text-center md:text-left">
+      <div className="mx-auto max-w-3xl text-center md:text-left">
         <Card>
           <CardContent className="p-8 text-lg leading-relaxed text-foreground/80">
             <p className="mb-4">

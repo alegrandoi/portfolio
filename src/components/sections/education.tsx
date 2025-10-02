@@ -39,7 +39,7 @@ export default function Education() {
       className="bg-muted/50"
     >
       <div className="grid gap-12">
-        <div>
+        <div className="mx-auto max-w-3xl">
           <h3 className="mb-6 text-center font-headline text-2xl font-bold md:text-left">
             Formación Reglada
           </h3>
@@ -67,7 +67,7 @@ export default function Education() {
           <h3 className="mb-6 text-center font-headline text-2xl font-bold md:text-left">
             Cursos Recientes (2024-2025)
           </h3>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {courses.map((course, index) => (
               <Card key={index} className="flex items-center gap-4 p-4">
                 <BookOpen className="h-6 w-6 shrink-0 text-accent" />

@@ -51,7 +51,7 @@ const experiences = [
 export default function Experience() {
   return (
     <SectionWrapper id="experience" title="Experiencia Profesional">
-      <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-border">
+      <div className="relative mx-auto max-w-3xl pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-border">
         {experiences.map((exp, index) => (
           <div key={index} className="relative mb-8 last:mb-0">
             <div className="absolute -left-[1.3rem] top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">

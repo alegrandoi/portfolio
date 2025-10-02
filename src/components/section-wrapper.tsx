@@ -38,7 +38,7 @@ export default function SectionWrapper({
             </h2>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:gap-12">
+        <div className="mx-auto grid max-w-5xl items-start gap-8 py-12 sm:grid-cols-1 md:gap-12 lg:grid-cols-1">
           {children}
         </div>
       </div>
