@@ -19,6 +19,7 @@ const ProjectedSkillsGrowthInputSchema = z.object({
     .describe(
       'The areas of technology and skills the person is interested in learning.'
     ),
+  lang: z.enum(['es', 'en']).describe('The language for the output.'),
 });
 export type ProjectedSkillsGrowthInput = z.infer<
   typeof ProjectedSkillsGrowthInputSchema
@@ -55,6 +56,7 @@ const prompt = ai.definePrompt({
   Future Areas of Interest: {{futureAreasOfInterest}}
 
   Statement: Focus on future aspirations, do not use past experience. The statement should be at most two sentences long.
+  The output language must be {{lang}}.
   `,
 });
 

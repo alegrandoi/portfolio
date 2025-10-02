@@ -1,3 +1,4 @@
+'use client';
 import SectionWrapper from '@/components/section-wrapper';
 import {
   Card,
@@ -6,42 +7,45 @@ import {
   CardDescription,
 } from '@/components/ui/card';
 import { GraduationCap, BookOpen } from 'lucide-react';
-
-const education = [
-  {
-    type: 'degree',
-    title: 'Ingeniería Informática, mención en Ingeniería del Software',
-    institution: 'Universidad de Sevilla',
-    period: '2020 - Presente',
-  },
-  {
-    type: 'degree',
-    title: 'Técnico Superior en Desarrollo de Aplicaciones Web',
-    institution: 'IES Los Remedios, Sevilla',
-    period: '2012 - 2014',
-  },
-];
-
-const courses = [
-  'Spring Core, Spring MVC & Spring REST',
-  'Clean Code: Writing Code for Humans',
-  'Hibernate & Java Persistence API (JPA)',
-  'Python for Everybody (Coursera)',
-  'Git & GitHub para desarrolladores',
-  'Conceptos básicos de la seguridad digital',
-];
+import { useI18n } from '@/hooks/use-i18n';
 
 export default function Education() {
+  const { t } = useI18n();
+
+  const education = [
+    {
+      type: 'degree',
+      title: t('education.formal.degree1.title'),
+      institution: t('education.formal.degree1.institution'),
+      period: t('education.formal.degree1.period'),
+    },
+    {
+      type: 'degree',
+      title: t('education.formal.degree2.title'),
+      institution: t('education.formal.degree2.institution'),
+      period: t('education.formal.degree2.period'),
+    },
+  ];
+
+  const courses = [
+    'Spring Core, Spring MVC & Spring REST',
+    'Clean Code: Writing Code for Humans',
+    'Hibernate & Java Persistence API (JPA)',
+    'Python for Everybody (Coursera)',
+    'Git & GitHub para desarrolladores',
+    'Conceptos básicos de la seguridad digital',
+  ];
+
   return (
     <SectionWrapper
       id="education"
-      title="Formación y Cursos"
+      title={t('education.title')}
       className="bg-muted/50"
     >
       <div className="grid gap-12">
         <div className="mx-auto max-w-3xl">
           <h3 className="mb-6 text-center font-headline text-2xl font-bold">
-            Formación Reglada
+            {t('education.formal.title')}
           </h3>
           <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-border">
             {education.map((edu, index) => (
@@ -65,11 +69,14 @@ export default function Education() {
         </div>
         <div>
           <h3 className="mb-6 text-center font-headline text-2xl font-bold">
-            Cursos Recientes (2024-2025)
+            {t('education.courses.title')}
           </h3>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {courses.map((course, index) => (
-              <Card key={index} className="flex items-center justify-center gap-4 p-4">
+              <Card
+                key={index}
+                className="flex items-center justify-center gap-4 p-4 text-center"
+              >
                 <BookOpen className="h-6 w-6 shrink-0 text-accent" />
                 <p className="font-medium">{course}</p>
               </Card>

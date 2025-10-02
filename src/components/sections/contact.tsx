@@ -4,15 +4,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import ContactForm from '@/components/contact-form';
+import { useI18n } from '@/hooks/use-i18n';
 
 export default function Contact() {
+  const { t } = useI18n();
+
   return (
-    <SectionWrapper id="contact" title="Contacto" className="bg-muted/50">
+    <SectionWrapper id="contact" title={t('contact.title')} className="bg-muted/50">
       <div className="flex flex-col items-center gap-8">
         <p className="max-w-2xl text-center text-lg text-muted-foreground">
-          ¿Interesado en colaborar o tienes alguna pregunta? No dudes en
-          contactarme. Estoy abierto a nuevas oportunidades y siempre dispuesto a
-          conectar con otros profesionales.
+          {t('contact.description')}
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild variant="outline" size="icon" className="h-12 w-12">

@@ -1,23 +1,24 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { I18nProvider } from '@/context/i18n-provider';
 
 export const metadata: Metadata = {
-  title: 'Alejandro Rodríguez Gómez | Desarrollador Java',
+  title: 'Alejandro Rodríguez Gómez | Java Developer',
   description:
-    'Portfolio de Alejandro Rodríguez, Ingeniero Informático y Desarrollador Java en Sevilla. Apasionado del software, el aprendizaje continuo y los retos tecnológicos. Explora mis proyectos, habilidades y experiencia en desarrollo backend con Spring Boot, APIs REST, SQL y Python.',
+    "Alejandro Rodríguez's Portfolio, Computer Engineer and Java Developer in Seville. Passionate about software, continuous learning, and technological challenges. Explore my projects, skills, and experience in backend development with Spring Boot, REST APIs, SQL, and Python.",
   keywords: [
-    'Desarrollador Java',
+    'Java Developer',
     'Backend',
     'Spring Boot',
-    'Ingeniero Informático',
-    'Sevilla',
-    'APIs REST',
+    'Computer Engineer',
+    'Seville',
+    'REST APIs',
     'SQL',
     'Python',
     'portfolio',
-    'programador',
-    'desarrollo de software',
+    'programmer',
+    'software development',
   ],
 };
 
@@ -37,8 +38,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body bg-background text-foreground antialiased">
-        {children}
-        <Toaster />
+        <I18nProvider>
+          {children}
+          <Toaster />
+        </I18nProvider>
       </body>
     </html>
   );

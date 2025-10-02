@@ -17,19 +17,23 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Send } from 'lucide-react';
-
-const formSchema = z.object({
-  name: z
-    .string()
-    .min(2, { message: 'El nombre debe tener al menos 2 caracteres.' }),
-  email: z.string().email({ message: 'Por favor, introduce un email válido.' }),
-  message: z
-    .string()
-    .min(10, { message: 'El mensaje debe tener al menos 10 caracteres.' }),
-});
+import { useI18n } from '@/hooks/use-i18n';
 
 export default function ContactForm() {
   const { toast } = useToast();
+  const { t } = useI18n();
+
+  const formSchema = z.object({
+    name: z
+      .string()
+      .min(2, { message: t('contact.form.validation.name') }),
+    email: z
+      .string()
+      .email({ message: t('contact.form.validation.email') }),
+    message: z
+      .string()
+      .min(10, { message: t('contact.form.validation.message') }),
+  });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -43,8 +47,8 @@ export default function ContactForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
     toast({
-      title: '¡Mensaje Enviado!',
-      description: 'Gracias por contactar. Te responderé lo antes posible.',
+      title: t('contact.form.toast.title'),
+      description: t('contact.form.toast.description'),
     });
     form.reset();
   }
@@ -57,9 +61,9 @@ export default function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nombre</FormLabel>
+              <FormLabel>{t('contact.form.name.label')}</FormLabel>
               <FormControl>
-                <Input placeholder="Tu nombre" {...field} />
+                <Input placeholder={t('contact.form.name.placeholder')} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -70,9 +74,9 @@ export default function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>{t('contact.form.email.label')}</FormLabel>
               <FormControl>
-                <Input placeholder="tu@email.com" {...field} />
+                <Input placeholder={t('contact.form.email.placeholder')} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -83,16 +87,16 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Mensaje</FormLabel>
+              <FormLabel>{t('contact.form.message.label')}</FormLabel>
               <FormControl>
-                <Textarea placeholder="Escribe tu mensaje aquí..." {...field} />
+                <Textarea placeholder={t('contact.form.message.placeholder')} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit" className="w-full" size="lg">
-          Enviar Mensaje
+          {t('contact.form.submit')}
           <Send className="ml-2 h-4 w-4" />
         </Button>
       </form>

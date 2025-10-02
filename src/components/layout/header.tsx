@@ -12,17 +12,20 @@ import {
   SheetTrigger,
   SheetClose,
 } from '@/components/ui/sheet';
-
-const navLinks = [
-  { href: '#about', label: 'Sobre mí' },
-  { href: '#skills', label: 'Habilidades' },
-  { href: '#experience', label: 'Experiencia' },
-  { href: '#education', label: 'Formación' },
-  { href: '#projects', label: 'Proyectos' },
-  { href: '#contact', label: 'Contacto' },
-];
+import { useI18n } from '@/hooks/use-i18n';
+import LanguageSwitcher from '../language-switcher';
 
 export default function Header() {
+  const { t } = useI18n();
+  const navLinks = [
+    { href: '#about', label: t('nav.about') },
+    { href: '#skills', label: t('nav.skills') },
+    { href: '#experience', label: t('nav.experience') },
+    { href: '#education', label: t('nav.education') },
+    { href: '#projects', label: t('nav.projects') },
+    { href: '#contact', label: t('nav.contact') },
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -47,6 +50,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end gap-2">
+          <LanguageSwitcher />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">

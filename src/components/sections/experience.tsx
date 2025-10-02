@@ -1,3 +1,4 @@
+'use client';
 import SectionWrapper from '@/components/section-wrapper';
 import {
   Card,
@@ -7,50 +8,53 @@ import {
   CardContent,
 } from '@/components/ui/card';
 import { Briefcase } from 'lucide-react';
-
-const experiences = [
-  {
-    role: 'Desarrollador Java',
-    company: 'Tier 1 Technology',
-    period: '2024',
-    tasks: [
-      'Desarrollo de aplicaciones a medida con Java y Spring Boot.',
-      'Creación y mantenimiento de APIs REST.',
-      'Gestión de bases de datos SQL.',
-      'Resolución de incidencias y soporte técnico.',
-      'Colaboración activa en equipo bajo metodologías ágiles.',
-    ],
-  },
-  {
-    role: 'Prácticas de empresa',
-    company: 'Tier 1 Technology',
-    period: '2024',
-    tasks: [
-      'Desarrollo de personalizaciones de software.',
-      'Apoyo al equipo de desarrollo en diversas tareas.',
-      'Resolución de incidencias de primer nivel.',
-    ],
-  },
-  {
-    role: 'Creación de tienda online (Beca Santander)',
-    company: 'Alep Interpiel SL',
-    period: '2015',
-    tasks: [
-      'Creación y gestión de e-commerce con Prestashop.',
-      'Personalización de plantillas y módulos.',
-    ],
-  },
-  {
-    role: 'Prácticas de Formación Profesional',
-    company: 'Empresa Sector Web',
-    period: '2014',
-    tasks: ['Mantenimiento web.', 'Soporte en tienda online.'],
-  },
-];
+import { useI18n } from '@/hooks/use-i18n';
 
 export default function Experience() {
+  const { t } = useI18n();
+
+  const experiences = [
+    {
+      role: t('experience.job1.role'),
+      company: 'Tier 1 Technology',
+      period: '2024',
+      tasks: [
+        t('experience.job1.task1'),
+        t('experience.job1.task2'),
+        t('experience.job1.task3'),
+        t('experience.job1.task4'),
+        t('experience.job1.task5'),
+      ],
+    },
+    {
+      role: t('experience.job2.role'),
+      company: 'Tier 1 Technology',
+      period: '2024',
+      tasks: [
+        t('experience.job2.task1'),
+        t('experience.job2.task2'),
+        t('experience.job2.task3'),
+      ],
+    },
+    {
+      role: t('experience.job3.role'),
+      company: 'Alep Interpiel SL',
+      period: '2015',
+      tasks: [
+        t('experience.job3.task1'),
+        t('experience.job3.task2'),
+      ],
+    },
+    {
+      role: t('experience.job4.role'),
+      company: t('experience.job4.company'),
+      period: '2014',
+      tasks: [t('experience.job4.task1'), t('experience.job4.task2')],
+    },
+  ];
+
   return (
-    <SectionWrapper id="experience" title="Experiencia Profesional">
+    <SectionWrapper id="experience" title={t('experience.title')}>
       <div className="relative mx-auto max-w-3xl pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-border">
         {experiences.map((exp, index) => (
           <div key={index} className="relative mb-8 last:mb-0">

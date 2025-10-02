@@ -1,35 +1,9 @@
+'use client';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Code, GitMerge, Users, Languages } from 'lucide-react';
-
-const skillsData = {
-  backend: {
-    title: 'Lenguajes & Backend',
-    icon: <Code className="h-8 w-8" />,
-    skills: ['Java', 'Spring Boot', 'Maven', 'Python', 'SQL'],
-  },
-  tools: {
-    title: 'Herramientas y Metodologías',
-    icon: <GitMerge className="h-8 w-8" />,
-    skills: ['Git', 'GitHub', 'Metodologías Ágiles (Scrum)'],
-  },
-  soft: {
-    title: 'Soft Skills',
-    icon: <Users className="h-8 w-8" />,
-    skills: [
-      'Trabajo en equipo',
-      'Comunicación',
-      'Resolución de problemas',
-      'Aprendizaje continuo',
-    ],
-  },
-  languages: {
-    title: 'Idiomas',
-    icon: <Languages className="h-8 w-8" />,
-    skills: ['Español (Nativo)', 'Inglés (B1)'],
-  },
-};
+import { useI18n } from '@/hooks/use-i18n';
 
 const SkillCard = ({
   title,
@@ -58,8 +32,38 @@ const SkillCard = ({
 );
 
 export default function Skills() {
+  const { t } = useI18n();
+
+  const skillsData = {
+    backend: {
+      title: t('skills.backend.title'),
+      icon: <Code className="h-8 w-8" />,
+      skills: ['Java', 'Spring Boot', 'Maven', 'Python', 'SQL'],
+    },
+    tools: {
+      title: t('skills.tools.title'),
+      icon: <GitMerge className="h-8 w-8" />,
+      skills: ['Git', 'GitHub', t('skills.tools.scrum')],
+    },
+    soft: {
+      title: t('skills.soft.title'),
+      icon: <Users className="h-8 w-8" />,
+      skills: [
+        t('skills.soft.teamwork'),
+        t('skills.soft.communication'),
+        t('skills.soft.problemSolving'),
+        t('skills.soft.continuousLearning'),
+      ],
+    },
+    languages: {
+      title: t('skills.languages.title'),
+      icon: <Languages className="h-8 w-8" />,
+      skills: [t('skills.languages.spanish'), t('skills.languages.english')],
+    },
+  };
+
   return (
-    <SectionWrapper id="skills" title="Habilidades" className="bg-muted/50">
+    <SectionWrapper id="skills" title={t('skills.title')} className="bg-muted/50">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <SkillCard {...skillsData.backend} />
         <SkillCard {...skillsData.tools} />
