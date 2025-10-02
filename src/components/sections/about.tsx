@@ -5,9 +5,9 @@ import { Card, CardContent } from '@/components/ui/card';
 export default function About() {
   return (
     <SectionWrapper id="about" title="Sobre Mí">
-      <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-3xl">
         <Card>
-          <CardContent className="p-8 text-lg leading-relaxed text-foreground/80">
+          <CardContent className="p-8 text-lg leading-relaxed text-foreground/80 text-left">
             <p className="mb-4">
               Desde siempre me ha fascinado cómo la tecnología puede transformar
               ideas en soluciones reales que impactan en la vida de las
