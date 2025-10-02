@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Download, Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
 
@@ -28,7 +29,7 @@ export default function Hero() {
           <div className="flex gap-2">
             <Button asChild variant="outline" size="icon" className="h-12 w-12">
               <a
-                href="https://github.com/zzalejandro3"
+                href="https://github.com/alegrandoi"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -38,7 +39,7 @@ export default function Hero() {
             </Button>
             <Button asChild variant="outline" size="icon" className="h-12 w-12">
               <a
-                href="https://www.linkedin.com/in/alejandro-rodriguez-gomez-dev/"
+                href="https://www.linkedin.com/in/alejandro-rodríguez-gómez-b5401029b"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -47,7 +48,7 @@ export default function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="icon" className="h-12 w-12">
-              <a href="#contact" aria-label="Contacto">
+              <a href="mailto:zzalejandro3@gmail.com" aria-label="Contacto">
                 <Mail />
               </a>
             </Button>
