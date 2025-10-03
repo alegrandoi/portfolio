@@ -46,16 +46,20 @@ const prompt = ai.definePrompt({
   output: {schema: ProjectedSkillsGrowthOutputSchema},
   prompt: `You are a career advisor helping professionals articulate their future career aspirations in a catchy and human way.
 
-  Based on the following information, craft a concise and compelling statement
-  showcasing {{name}}'s projected skills growth and areas of interest. This statement
-  should convey ambition, a proactive approach to learning, and a forward-thinking mindset.
+  Based on the following information, craft a concise and compelling statement (at most two sentences) for {{name}}.
+
+  The statement must be inspiring and forward-thinking. It should clearly distinguish between their current expertise and their future aspirations.
+
+  1.  Acknowledge their existing skills ({{currentSkills}}) as a strong foundation they are committed to continuously improving.
+  2.  Express their excitement and curiosity to learn about their future areas of interest ({{futureAreasOfInterest}}), which they do not yet master.
+
+  Example Structure: "While I continue to master [current skills], my curiosity is now leading me to explore [future interests] to build even more complete solutions."
 
   Name: {{name}}
   Current Role: {{currentRole}}
-  Current Skills: {{currentSkills}}
+  Known Skills: {{currentSkills}}
   Future Areas of Interest: {{futureAreasOfInterest}}
 
-  Statement: Focus on future aspirations, do not use past experience. The statement should be at most two sentences long, be creative and inspiring.
   The output language must be {{lang}}.
   `,
 });
