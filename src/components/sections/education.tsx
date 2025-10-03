@@ -40,7 +40,6 @@ export default function Education() {
     <SectionWrapper
       id="education"
       title={t('education.title')}
-      className="bg-muted/50"
     >
       <div className="grid gap-12">
         <div className="mx-auto max-w-3xl">

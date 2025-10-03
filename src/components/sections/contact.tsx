@@ -12,7 +12,7 @@ export default function Contact() {
   const { t } = useI18n();
 
   return (
-    <SectionWrapper id="contact" title={t('contact.title')} className="bg-muted/50">
+    <SectionWrapper id="contact" title={t('contact.title')}>
       <div className="flex flex-col items-center gap-8">
         <p className="max-w-2xl text-center text-lg text-muted-foreground">
           {t('contact.description')}
