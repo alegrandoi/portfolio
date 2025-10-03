@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview A flow to generate a forward-looking statement showcasing projected skills growth.
@@ -44,6 +45,9 @@ const prompt = ai.definePrompt({
   name: 'projectedSkillsGrowthPrompt',
   input: {schema: ProjectedSkillsGrowthInputSchema},
   output: {schema: ProjectedSkillsGrowthOutputSchema},
+  config: {
+    temperature: 0.7,
+  },
   prompt: `You are a career advisor helping professionals articulate their future career aspirations in a catchy and human way.
 
   Based on the following information, craft a concise and compelling statement (at most two sentences) for {{name}}.
@@ -58,7 +62,7 @@ const prompt = ai.definePrompt({
   Name: {{name}}
   Current Role: {{currentRole}}
   Known Skills: {{currentSkills}}
-  Future Areas of Interest: {{futureAreasOfInterest}}
+  Future Areas of interest: {{futureAreasOfInterest}}
 
   The output language must be {{lang}}.
   `,
