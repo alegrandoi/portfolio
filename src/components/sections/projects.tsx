@@ -52,7 +52,7 @@ export default function Projects() {
     {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
-      image: 'https://picsum.photos/seed/socialmovie/600/400',
+      image: '/socialmovie-project.png',
       imageHint: 'mobile social',
       tags: [
         'Java',
@@ -85,7 +85,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="rounded-md object-cover"
+                  className="rounded-md object-contain"
                   data-ai-hint={project.imageHint}
                 />
               </div>
