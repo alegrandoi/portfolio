@@ -52,7 +52,7 @@ export default function Projects() {
     {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
-      image: '/socialmovie-project.png',
+      image: '/socialmovie-project.jpg',
       imageHint: 'mobile social',
       tags: [
         'Java',
