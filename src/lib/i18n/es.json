@@ -96,7 +96,7 @@
       "title": "Proyección Profesional"
     },
     "socialmovie": {
-      "title": "SocialMovie",
+      "title": "SocialMovies",
       "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
     },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",

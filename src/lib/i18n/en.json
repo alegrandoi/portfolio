@@ -96,7 +96,7 @@
       "title": "Professional Projection"
     },
     "socialmovie": {
-      "title": "SocialMovie",
+      "title": "SocialMovies",
       "description": "Android app to check movie information from the TMDB API, save favorites, and follow friends. Developed with Java, Kotlin, and Firebase."
     },
     "prompt": "Click the button to generate a projection of my future skills and areas of interest.",
