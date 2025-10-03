@@ -90,8 +90,15 @@
     }
   },
   "projects": {
-    "title": "Projects and Projection",
-    "description": "I am currently focused on consolidating my knowledge and building solid personal projects. To show my ambition and future focus, I have used AI to generate a statement of my professional aspirations.",
+    "title": "Projects",
+    "description": "To show my ambition and future focus, I have used AI to generate a statement of my professional aspirations.",
+    "projection": {
+      "title": "Professional Projection"
+    },
+    "socialmovie": {
+      "title": "SocialMovie",
+      "description": "Android app to check movie information from the TMDB API, save favorites, and follow friends. Developed with Java, Kotlin, and Firebase."
+    },
     "prompt": "Click the button to generate a projection of my future skills and areas of interest.",
     "button": {
       "default": "Generate Professional Projection",

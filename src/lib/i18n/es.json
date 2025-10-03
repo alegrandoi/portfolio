@@ -90,8 +90,15 @@
     }
   },
   "projects": {
-    "title": "Proyectos y Proyección",
-    "description": "Actualmente estoy enfocado en consolidar mis conocimientos y construir proyectos personales sólidos. Para mostrar mi ambición y enfoque a futuro, he utilizado IA para generar una declaración de mis aspiraciones profesionales.",
+    "title": "Proyectos",
+    "description": "Para mostrar mi ambición y enfoque a futuro, he utilizado IA para generar una declaración de mis aspiraciones profesionales.",
+    "projection": {
+      "title": "Proyección Profesional"
+    },
+    "socialmovie": {
+      "title": "SocialMovie",
+      "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
+    },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
     "button": {
       "default": "Generar Proyección Profesional",
