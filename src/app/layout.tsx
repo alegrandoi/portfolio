@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/context/i18n-provider';
+import { ThemeProvider } from '@/context/theme-provider';
 
 export const metadata: Metadata = {
   title: 'Alejandro Rodríguez Gómez | Java Developer',
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -38,10 +39,17 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body bg-background text-foreground antialiased">
-        <I18nProvider>
-          {children}
-          <Toaster />
-        </I18nProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <I18nProvider>
+            {children}
+            <Toaster />
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

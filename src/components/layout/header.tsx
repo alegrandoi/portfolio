@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/sheet';
 import { useI18n } from '@/hooks/use-i18n';
 import LanguageSwitcher from '../language-switcher';
+import ThemeSwitcher from '../theme-switcher';
 
 export default function Header() {
   const { t } = useI18n();
@@ -51,6 +52,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end gap-2">
           <LanguageSwitcher />
+          <ThemeSwitcher />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
