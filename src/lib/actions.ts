@@ -11,7 +11,7 @@ export async function generateProjectedStatementAction(lang: Language): Promise<
     currentRole: lang === 'es' ? 'Desarrollador Java' : 'Java Developer',
     currentSkills: 'Java, Spring Boot, Maven, SQL, APIs REST, Git, Python',
     futureAreasOfInterest:
-      lang === 'es' ? 'Frontend, cloud computing, inteligencia artificial, arquitectura de software' : 'Frontend, cloud computing, artificial intelligence, software architecture',
+      lang === 'es' ? 'Aunque mi corazón está en el backend, me entusiasma aprender sobre frontend, cloud, IA y arquitectura de software para construir soluciones completas.' : 'While my heart is in backend, I am excited to learn about frontend, cloud, AI, and software architecture to build complete solutions.',
     lang: lang,
   };
   return await generateProjectedSkillsStatement(input);

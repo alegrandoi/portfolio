@@ -44,7 +44,7 @@ const prompt = ai.definePrompt({
   name: 'projectedSkillsGrowthPrompt',
   input: {schema: ProjectedSkillsGrowthInputSchema},
   output: {schema: ProjectedSkillsGrowthOutputSchema},
-  prompt: `You are a career advisor helping professionals articulate their future career aspirations.
+  prompt: `You are a career advisor helping professionals articulate their future career aspirations in a catchy and human way.
 
   Based on the following information, craft a concise and compelling statement
   showcasing {{name}}'s projected skills growth and areas of interest. This statement
@@ -55,7 +55,7 @@ const prompt = ai.definePrompt({
   Current Skills: {{currentSkills}}
   Future Areas of Interest: {{futureAreasOfInterest}}
 
-  Statement: Focus on future aspirations, do not use past experience. The statement should be at most two sentences long.
+  Statement: Focus on future aspirations, do not use past experience. The statement should be at most two sentences long, be creative and inspiring.
   The output language must be {{lang}}.
   `,
 });
