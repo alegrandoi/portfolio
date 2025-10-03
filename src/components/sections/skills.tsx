@@ -14,16 +14,16 @@ const SkillCard = ({
   icon: React.ReactNode;
   skills: string[];
 }) => (
-  <Card className="transform-gpu text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+  <Card className="flex h-full flex-col text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl">
     <CardHeader className="items-center">
-      <div className="mb-2 rounded-full bg-primary/10 p-3 text-primary">
+      <div className="mb-4 rounded-full bg-primary/10 p-4 text-primary">
         {icon}
       </div>
-      <CardTitle className="font-headline">{title}</CardTitle>
+      <CardTitle className="font-headline text-xl">{title}</CardTitle>
     </CardHeader>
-    <CardContent className="flex flex-wrap justify-center gap-2">
+    <CardContent className="flex flex-1 flex-wrap items-center justify-center gap-2">
       {skills.map(skill => (
-        <Badge key={skill} variant="secondary" className="text-sm">
+        <Badge key={skill} variant="secondary" className="text-sm font-medium">
           {skill}
         </Badge>
       ))}
@@ -63,7 +63,11 @@ export default function Skills() {
   };
 
   return (
-    <SectionWrapper id="skills" title={t('skills.title')} className="bg-muted/50">
+    <SectionWrapper
+      id="skills"
+      title={t('skills.title')}
+      className="bg-muted/50"
+    >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <SkillCard {...skillsData.backend} />
         <SkillCard {...skillsData.tools} />
