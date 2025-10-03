@@ -85,7 +85,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="rounded-md object-contain"
+                  className="rounded-md object-cover"
                   data-ai-hint={project.imageHint}
                 />
               </div>
