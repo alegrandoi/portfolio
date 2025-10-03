@@ -21,6 +21,7 @@ const ProjectedSkillsGrowthInputSchema = z.object({
       'The areas of technology and skills the person is interested in learning.'
     ),
   lang: z.enum(['es', 'en']).describe('The language for the output.'),
+  temperature: z.number().min(0).max(1).describe('The creativity of the output.'),
 });
 export type ProjectedSkillsGrowthInput = z.infer<
   typeof ProjectedSkillsGrowthInputSchema
@@ -45,9 +46,6 @@ const prompt = ai.definePrompt({
   name: 'projectedSkillsGrowthPrompt',
   input: {schema: ProjectedSkillsGrowthInputSchema},
   output: {schema: ProjectedSkillsGrowthOutputSchema},
-  config: {
-    temperature: 0.7,
-  },
   prompt: `You are a career advisor helping professionals articulate their future career aspirations in a catchy and human way.
 
   Based on the following information, craft a concise and compelling statement (at most two sentences) for {{name}}.
@@ -75,7 +73,11 @@ const projectedSkillsGrowthFlow = ai.defineFlow(
     outputSchema: ProjectedSkillsGrowthOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
+    const {output} = await prompt(input, {
+      config: {
+        temperature: input.temperature,
+      },
+    });
     return output!;
   }
 );

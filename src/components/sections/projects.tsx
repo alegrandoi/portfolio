@@ -18,10 +18,13 @@ import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
 import { generateProjectedStatementAction } from '@/lib/actions';
 import { useI18n } from '@/hooks/use-i18n';
+import { Slider } from '@/components/ui/slider';
+import { Label } from '@/components/ui/label';
 
 export default function Projects() {
   const [statement, setStatement] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [temperature, setTemperature] = useState([0.7]);
   const { toast } = useToast();
   const { t, lang } = useI18n();
 
@@ -29,7 +32,7 @@ export default function Projects() {
     setIsLoading(true);
     setStatement('');
     try {
-      const result = await generateProjectedStatementAction(lang);
+      const result = await generateProjectedStatementAction(lang, temperature[0]);
       if (result.projectedSkillsStatement) {
         setStatement(result.projectedSkillsStatement);
       } else {
@@ -130,6 +133,18 @@ export default function Projects() {
             )}
           </CardContent>
           <CardFooter className="flex-col items-stretch gap-4">
+            <div className="space-y-3">
+              <Label htmlFor="temperature">Creatividad de la IA ({temperature[0]})</Label>
+              <Slider
+                id="temperature"
+                min={0}
+                max={1}
+                step={0.1}
+                value={temperature}
+                onValueChange={setTemperature}
+                disabled={isLoading}
+              />
+            </div>
             <Button onClick={handleGenerate} disabled={isLoading} size="lg">
               <Wand2 className="mr-2 h-4 w-4" />
               {isLoading
