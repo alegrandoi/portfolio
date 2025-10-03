@@ -66,7 +66,7 @@ export default function Education() {
             ))}
           </div>
         </div>
-        <div>
+        <div className="mt-12">
           <h3 className="mb-6 text-center font-headline text-2xl font-bold">
             {t('education.courses.title')}
           </h3>
