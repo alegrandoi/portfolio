@@ -86,7 +86,43 @@
       }
     },
     "courses": {
-      "title": "Cursos Recientes (2024-2025)"
+      "title": "Cursos Recientes",
+      "viewCertificate": "Ver Certificado",
+      "course1": {
+        "title": "Curso Marketing Online, Móviles y Redes Sociales 120H",
+        "details": "2016 | V MÁSTER COMUNICACIÓN PLUS | El Puerto de Santa María",
+        "link": "/Certificado-Marketing-Digital.pdf"
+      },
+      "course2": {
+        "title": "Seguridad Digital Básica 60H",
+        "details": "2025 | IFCT0087 - Modalidad Online",
+        "link": "/Certificado-Seguridad-Digital.pdf"
+      },
+      "course3": {
+        "title": "Curso Spring Core 5 10H",
+        "details": "2025 | OpenWebinars",
+        "link": "/Certificado-Spring-Core.pdf"
+      },
+      "course4": {
+        "title": "Curso de Clean Code 9H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/CysU"
+      },
+      "course5": {
+        "title": "Curso Online de Hibernate y JPA 14H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/151g"
+      },
+      "course6": {
+        "title": "Curso Intensivo de Python 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/947W7JNBHSZT"
+      },
+      "course7": {
+        "title": "Introducción a Git y GitHub 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/CLXQMUMRPPL6"
+      }
     }
   },
   "projects": {
