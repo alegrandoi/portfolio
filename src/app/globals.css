@@ -10,7 +10,7 @@
 
 @layer base {
   :root {
-    --background: 206 43% 95%; /* Light Gray */
+    --background: 206 43% 92%; /* Light Gray */
     --foreground: 215 28% 17%; /* Dark Navy */
     --card: 0 0% 100%;
     --card-foreground: 215 28% 17%;
