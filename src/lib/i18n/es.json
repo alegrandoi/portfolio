@@ -1,0 +1,181 @@
+
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Estudiante de Ingeniería Informática y Desarrollador Java.",
+    "quote": "“Apasionado del software, el aprendizaje continuo y los retos tecnológicos.”",
+    "downloadCv": "Descargar CV",
+    "contactAriaLabel": "Contacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "p1": "Desde siempre me ha fascinado cómo la tecnología puede transformar ideas en soluciones reales que impactan en la vida de las personas. Esa pasión me llevó a estudiar Ingeniería Informática en la Universidad de Sevilla, un camino que estoy a punto de culminar.",
+    "p2": "Para mí, programar no es solo escribir código: es un ejercicio de creatividad, lógica y resolución de problemas, una forma de construir herramientas útiles y con propósito.",
+    "p3": "Tras completar mi primera experiencia profesional en Tier 1 Technology, me encuentro en un momento clave: busco un nuevo reto que me permita seguir creciendo como desarrollador. Me apasiona el desarrollo backend con Java y Spring Boot, pero lo que realmente me motiva es aprender de forma continua, explorar nuevas tecnologías y aportar valor dentro de un equipo que comparta la misma visión de innovación."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "backend": {
+      "title": "Lenguajes & Backend"
+    },
+    "tools": {
+      "title": "Herramientas y Metodologías",
+      "scrum": "Metodologías Ágiles (Scrum)"
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "teamwork": "Trabajo en equipo",
+      "communication": "Comunicación",
+      "problemSolving": "Resolución de problemas",
+      "continuousLearning": "Aprendizaje continuo"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanish": "Español (Nativo)",
+      "english": "Inglés (B1)"
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "job1": {
+      "role": "Desarrollador Java",
+      "task1": "Desarrollo de aplicaciones a medida con Java y Spring Boot.",
+      "task2": "Creación y mantenimiento de APIs REST.",
+      "task3": "Gestión de bases de datos SQL.",
+      "task4": "Resolución de incidencias y soporte técnico.",
+      "task5": "Colaboración activa en equipo bajo metodologías ágiles."
+    },
+    "job2": {
+      "role": "Prácticas de empresa",
+      "task1": "Desarrollo de personalizaciones de software.",
+      "task2": "Apoyo al equipo de desarrollo en diversas tareas.",
+      "task3": "Resolución de incidencias de primer nivel."
+    },
+    "job3": {
+      "role": "Creación de tienda online (Beca Santander)",
+      "task1": "Creación y gestión de e-commerce con Prestashop.",
+      "task2": "Personalización de plantillas y módulos."
+    },
+    "job4": {
+      "role": "Prácticas de Formación Profesional",
+      "company": "Empresa Sector Web",
+      "task1": "Mantenimiento web.",
+      "task2": "Soporte en tienda online."
+    }
+  },
+  "education": {
+    "title": "Formación y Cursos",
+    "formal": {
+      "title": "Formación Reglada",
+      "degree1": {
+        "title": "Ingeniería Informática, mención en Ingeniería del Software",
+        "institution": "Universidad de Sevilla",
+        "period": "2020 - Presente"
+      },
+      "degree2": {
+        "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+        "institution": "IES Los Remedios, Sevilla",
+        "period": "2012 - 2014"
+      }
+    },
+    "courses": {
+      "title": "Cursos Recientes",
+      "viewCertificate": "Ver Certificado",
+      "course1": {
+        "title": "Curso Marketing Online, Móviles y Redes Sociales 120H",
+        "details": "2015 | V MÁSTER COMUNICACIÓN PLUS | El Puerto de Santa María",
+        "link": "/Certificado-Marketing-Digital.pdf"
+      },
+      "course2": {
+        "title": "Seguridad Digital Básica 60H",
+        "details": "2025 | IFCT0087 - Modalidad Online",
+        "link": "/Certificado-Seguridad-Digital.pdf"
+      },
+      "course3": {
+        "title": "Curso Spring Core 5 10H",
+        "details": "2025 | OpenWebinars",
+        "link": "/Certificado-Spring-Core.pdf"
+      },
+      "course4": {
+        "title": "Curso de Clean Code 9H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/CysU"
+      },
+      "course5": {
+        "title": "Curso Online de Hibernate y JPA 14H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/151g"
+      },
+      "course6": {
+        "title": "Curso Intensivo de Python 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/947W7JNBHSZT"
+      },
+      "course7": {
+        "title": "Introducción a Git y GitHub 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/CLXQMUMRPPL6"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Para mostrar mi ambición y enfoque a futuro, he utilizado IA para generar una declaración de mis aspiraciones profesionales.",
+    "projection": {
+      "title": "Proyección Profesional"
+    },
+    "socialmovie": {
+      "title": "SocialMovies",
+      "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
+    },
+    "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
+    "button": {
+      "default": "Generar Proyección Profesional",
+      "loading": "Generando..."
+    },
+    "errors": {
+      "generationFailed": "No se pudo generar la declaración.",
+      "title": "Error",
+      "description": "Hubo un problema al generar la proyección. Inténtalo de nuevo.",
+      "fallback": "Aquí próximamente mostraré mis proyectos personales. Estoy aprendiendo nuevas tecnologías y pronto compartiré aplicaciones completas en frontend, cloud e inteligencia artificial."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme. Estoy abierto a nuevas oportunidades y siempre dispuesto a conectar con otros profesionales.",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "tu@email.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje aquí..."
+      },
+      "submit": "Enviar Mensaje",
+      "validation": {
+        "name": "El nombre debe tener al menos 2 caracteres.",
+        "email": "Por favor, introduce un email válido.",
+        "message": "El mensaje debe tener al menos 10 caracteres."
+      },
+      "toast": {
+        "title": "¡Mensaje Enviado!",
+        "description": "Gracias por contactar. Te responderé lo antes posible."
+      }
+    }
+  },
+  "footer": {
+    "text": "Diseñado y construido con pasión."
+  }
+}
