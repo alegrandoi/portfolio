@@ -71,7 +71,7 @@ export default function Projects() {
     {
       title: t('projects.tasksnotes.title'),
       description: t('projects.tasksnotes.description'),
-      image: 'https://picsum.photos/seed/123/1280/720',
+      image: '/tasks-notes-project.jpg',
       imageHint: 'web application tasks',
       tags: [
         'Angular',
@@ -88,7 +88,7 @@ export default function Projects() {
 
   return (
     <SectionWrapper id="projects" title={t('projects.title')}>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map(project => (
           <Card
             key={project.title}
