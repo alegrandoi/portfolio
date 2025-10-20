@@ -130,7 +130,7 @@ export default function Projects() {
             </CardFooter>
           </Card>
         ))}
-        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl md:col-span-2">
+        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           <CardHeader>
             <CardTitle>{t('projects.projection.title')}</CardTitle>
             <CardDescription>{t('projects.description')}</CardDescription>
