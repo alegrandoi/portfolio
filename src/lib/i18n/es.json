@@ -137,7 +137,7 @@
     },
     "tasksnotes": {
       "title": "Tareas & Notas",
-      "description": "Aplicación web para gestionar tareas y notas orientada a personas que desean aprender Angular moderno con un caso práctico real. El proyecto incorpora componentes standalone, Signals, Angular Material, i18n y estrategias de persistencia dual para cubrir un flujo de trabajo profesional de extremo a extremo."
+      "description": "Aplicación web para gestionar tareas y notas, orientada a aprender Angular moderno con un caso práctico, usando Standalone Components, Signals e i18n."
     },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
     "creativityLabel": "Creatividad de la IA",

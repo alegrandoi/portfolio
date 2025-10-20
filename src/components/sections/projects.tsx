@@ -94,20 +94,20 @@ export default function Projects() {
             key={project.title}
             className="flex h-full flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           >
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+                data-ai-hint={project.imageHint}
+              />
+            </div>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex-1 space-y-4">
-              <div className="relative aspect-video w-full">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="rounded-md object-cover"
-                  data-ai-hint={project.imageHint}
-                />
-              </div>
+            <CardContent className="flex flex-1 flex-col justify-end space-y-4">
               <div className="flex flex-wrap gap-2">
                 {project.tags.map(tag => (
                   <Badge key={tag} variant="secondary">

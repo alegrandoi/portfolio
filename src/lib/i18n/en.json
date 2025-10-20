@@ -137,7 +137,7 @@
     },
     "tasksnotes": {
       "title": "Tasks & Notes",
-      "description": "Web application to manage tasks and notes aimed at people who want to learn modern Angular with a real practical case. The project incorporates standalone components, Signals, Angular Material, i18n, and dual persistence strategies to cover a professional end-to-end workflow."
+      "description": "A web app to manage tasks and notes, aimed at learning modern Angular with a practical case, using Standalone Components, Signals and i18n."
     },
     "prompt": "Click the button to generate a projection of my future skills and areas of interest.",
     "creativityLabel": "AI Creativity",
