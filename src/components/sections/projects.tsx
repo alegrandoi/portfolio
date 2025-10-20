@@ -71,7 +71,7 @@ export default function Projects() {
     {
       title: t('projects.tasksnotes.title'),
       description: t('projects.tasksnotes.description'),
-      image: '/tasks-notes-project.jpg',
+      image: '/fondo-tareas&notas.png',
       imageHint: 'web application tasks',
       tags: [
         'Angular',
