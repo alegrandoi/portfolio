@@ -68,6 +68,22 @@ export default function Projects() {
       ],
       link: 'https://github.com/alegrandoi/socialmovie',
     },
+    {
+      title: t('projects.tasksnotes.title'),
+      description: t('projects.tasksnotes.description'),
+      image: 'https://picsum.photos/seed/123/1280/720',
+      imageHint: 'web application tasks',
+      tags: [
+        'Angular',
+        'TypeScript',
+        'SCSS',
+        'Angular Material',
+        'Standalone Components',
+        'Signals',
+        'i18n',
+      ],
+      link: 'https://github.com/alegrandoi/angular-tareas-notas-es',
+    },
   ];
 
   return (
@@ -114,7 +130,7 @@ export default function Projects() {
             </CardFooter>
           </Card>
         ))}
-        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl md:col-span-2">
           <CardHeader>
             <CardTitle>{t('projects.projection.title')}</CardTitle>
             <CardDescription>{t('projects.description')}</CardDescription>
@@ -135,8 +151,8 @@ export default function Projects() {
           <CardFooter className="flex-col items-stretch gap-4">
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <Label htmlFor="temperature">Creatividad de la IA ({temperature[0]})</Label>
-                <span className="text-xs text-muted-foreground">Más creativo → 1</span>
+                <Label htmlFor="temperature">{t('projects.creativityLabel')} ({temperature[0]})</Label>
+                <span className="text-xs text-muted-foreground">{t('projects.creativityHint')}</span>
               </div>
               <Slider
                 id="temperature"

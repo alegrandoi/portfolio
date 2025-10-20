@@ -135,7 +135,13 @@
       "title": "SocialMovies",
       "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
     },
+    "tasksnotes": {
+      "title": "Tareas & Notas",
+      "description": "Aplicación web para gestionar tareas y notas orientada a personas que desean aprender Angular moderno con un caso práctico real. El proyecto incorpora componentes standalone, Signals, Angular Material, i18n y estrategias de persistencia dual para cubrir un flujo de trabajo profesional de extremo a extremo."
+    },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
+    "creativityLabel": "Creatividad de la IA",
+    "creativityHint": "Más creativo → 1",
     "button": {
       "default": "Generar Proyección Profesional",
       "loading": "Generando..."
