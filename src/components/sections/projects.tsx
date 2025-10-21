@@ -84,6 +84,14 @@ export default function Projects() {
       ],
       link: 'https://github.com/alegrandoi/angular-tareas-notas-es',
     },
+    {
+      title: t('projects.onlinebookstore.title'),
+      description: t('projects.onlinebookstore.description'),
+      image: '/fondo-libreria-enlinea.png',
+      imageHint: 'web application ecommerce',
+      tags: ['React', 'TypeScript', 'Vite', 'Angular-like Patterns', 'Lazy Loading', 'Guards'],
+      link: 'https://github.com/alegrandoi/libreria-enlinea',
+    },
   ];
 
   return (
@@ -130,7 +138,7 @@ export default function Projects() {
             </CardFooter>
           </Card>
         ))}
-        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl md:col-span-2 lg:col-span-1">
           <CardHeader>
             <CardTitle>{t('projects.projection.title')}</CardTitle>
             <CardDescription>{t('projects.description')}</CardDescription>

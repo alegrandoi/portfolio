@@ -137,7 +137,11 @@
     },
     "tasksnotes": {
       "title": "Tareas & Notas",
-      "description": "Aplicación web para gestionar tareas y notas, orientada a aprender Angular moderno con un caso práctico, usando Standalone Components, Signals e i18n."
+      "description": "Aplicación web para gestionar tareas y notas, orientada a aprender Angular moderno con componentes standalone, Signals e i18n."
+    },
+    "onlinebookstore": {
+      "title": "Librería en línea",
+      "description": "Mini e-commerce construido con React + TypeScript + Vite. Demuestra patrones de arquitectura similares a Angular y un enfoque robusto orientado a DX."
     },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
     "creativityLabel": "Creatividad de la IA",
