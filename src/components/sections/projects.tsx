@@ -135,8 +135,8 @@ export default function Projects() {
           <CardFooter className="flex-col items-stretch gap-4">
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <Label htmlFor="temperature">Creatividad de la IA ({temperature[0]})</Label>
-                <span className="text-xs text-muted-foreground">Más creativo → 1</span>
+                <Label htmlFor="temperature">{t('projects.creativity.label', { temp: temperature[0] })}</Label>
+                <span className="text-xs text-muted-foreground">{t('projects.creativity.moreCreative')}</span>
               </div>
               <Slider
                 id="temperature"
