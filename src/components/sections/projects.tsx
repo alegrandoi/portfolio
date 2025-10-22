@@ -53,6 +53,22 @@ export default function Projects() {
 
   const projects = [
     {
+      title: t('projects.libreria.title'),
+      description: t('projects.libreria.description'),
+      image: '/fondo-libreria-enlinea.png',
+      imageHint: 'bookstore online',
+      tags: [
+        'React',
+        'TypeScript',
+        'Vite',
+        'TanStack Router',
+        'TailwindCSS',
+        'Zustand',
+        'Appwrite',
+      ],
+      link: 'https://github.com/alegrandoi/libreria-enlinea',
+    },
+    {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
       image: '/socialmovie-project.jpg',
@@ -114,7 +130,7 @@ export default function Projects() {
             </CardFooter>
           </Card>
         ))}
-        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <Card className="flex h-full flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl md:col-span-2 lg:col-span-1">
           <CardHeader>
             <CardTitle>{t('projects.projection.title')}</CardTitle>
             <CardDescription>{t('projects.description')}</CardDescription>
@@ -135,8 +151,8 @@ export default function Projects() {
           <CardFooter className="flex-col items-stretch gap-4">
             <div className="space-y-3">
               <div className="flex justify-between items-center">
-                <Label htmlFor="temperature">Creatividad de la IA ({temperature[0]})</Label>
-                <span className="text-xs text-muted-foreground">Más creativo → 1</span>
+                <Label htmlFor="temperature">{t('projects.creativitySlider.label')} ({temperature[0]})</Label>
+                <span className="text-xs text-muted-foreground">{t('projects.creativitySlider.moreCreative')} → 1</span>
               </div>
               <Slider
                 id="temperature"

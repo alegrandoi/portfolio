@@ -135,6 +135,10 @@
       "title": "SocialMovies",
       "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
     },
+    "libreria": {
+      "title": "Librería en línea",
+      "description": "Mini e-commerce profesional construido con React + TypeScript + Vite para la venta de libros. El proyecto demuestra patrones de arquitectura similares a Angular (modularización por feature, servicios inyectables, guards, lazy loading) y un enfoque robusto orientado a DX."
+    },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
     "button": {
       "default": "Generar Proyección Profesional",
@@ -145,6 +149,10 @@
       "title": "Error",
       "description": "Hubo un problema al generar la proyección. Inténtalo de nuevo.",
       "fallback": "Aquí próximamente mostraré mis proyectos personales. Estoy aprendiendo nuevas tecnologías y pronto compartiré aplicaciones completas en frontend, cloud e inteligencia artificial."
+    },
+    "creativitySlider": {
+      "label": "Creatividad de la IA",
+      "moreCreative": "Más creativo"
     }
   },
   "contact": {
