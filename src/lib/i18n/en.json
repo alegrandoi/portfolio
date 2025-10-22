@@ -1,0 +1,195 @@
+
+{
+  "nav": {
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Computer Engineering Student and Java Developer.",
+    "quote": "“Passionate about software, continuous learning, and technological challenges.”",
+    "downloadCv": "Download CV",
+    "contactAriaLabel": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I have always been fascinated by how technology can transform ideas into real solutions that impact people's lives. That passion led me to study Computer Engineering at the University of Seville, a path I am about to complete.",
+    "p2": "For me, programming is not just writing code: it is an exercise in creativity, logic, and problem-solving, a way to build useful and purposeful tools.",
+    "p3": "After completing my first professional experience at Tier 1 Technology, I find myself at a key moment: I am looking for a new challenge that allows me to continue growing as a developer. I am passionate about backend development with Java and Spring Boot, but what really motivates me is continuous learning, exploring new technologies, and adding value within a team that shares the same vision of innovation."
+  },
+  "skills": {
+    "title": "Skills",
+    "backend": {
+      "title": "Languages & Backend"
+    },
+    "tools": {
+      "title": "Tools and Methodologies",
+      "scrum": "Agile Methodologies (Scrum)"
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "teamwork": "Teamwork",
+      "communication": "Communication",
+      "problemSolving": "Problem Solving",
+      "continuousLearning": "Continuous Learning"
+    },
+    "languages": {
+      "title": "Languages",
+      "spanish": "Spanish (Native)",
+      "english": "English (B1)"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "job1": {
+      "role": "Java Developer",
+      "task1": "Development of custom applications with Java and Spring Boot.",
+      "task2": "Creation and maintenance of REST APIs.",
+      "task3": "Management of SQL databases.",
+      "task4": "Incident resolution and technical support.",
+      "task5": "Active collaboration in a team under agile methodologies."
+    },
+    "job2": {
+      "role": "Internship",
+      "task1": "Development of software customizations.",
+      "task2": "Support to the development team in various tasks.",
+      "task3": "Resolution of first-level incidents."
+    },
+    "job3": {
+      "role": "Creation of an online store (Santander Scholarship)",
+      "task1": "Creation and management of e-commerce with Prestashop.",
+      "task2": "Customization of templates and modules."
+    },
+    "job4": {
+      "role": "Vocational Training Internship",
+      "company": "Web Sector Company",
+      "task1": "Web maintenance.",
+      "task2": "Support in online store."
+    }
+  },
+  "education": {
+    "title": "Education and Courses",
+    "formal": {
+      "title": "Formal Education",
+      "degree1": {
+        "title": "Computer Engineering, major in Software Engineering",
+        "institution": "University of Seville",
+        "period": "2020 - Present"
+      },
+      "degree2": {
+        "title": "Higher Technician in Web Application Development",
+        "institution": "IES Los Remedios, Seville",
+        "period": "2012 - 2014"
+      }
+    },
+    "courses": {
+      "title": "Recent Courses",
+      "viewCertificate": "View Certificate",
+      "course1": {
+        "title": "Online Marketing, Mobile & Social Media Course 120H",
+        "details": "2015 | V MASTER COMMUNICATION PLUS | El Puerto de Santa María",
+        "link": "/Certificado-Marketing-Digital.pdf"
+      },
+      "course2": {
+        "title": "Basic Digital Security 60H",
+        "details": "2025 | IFCT0087 - Online Mode",
+        "link": "/Certificado-Seguridad-Digital.pdf"
+      },
+      "course3": {
+        "title": "Spring Core 5 Course 10H",
+        "details": "2025 | OpenWebinars",
+        "link": "/Certificado-Spring-Core.pdf"
+      },
+      "course4": {
+        "title": "Clean Code Course 9H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/CysU"
+      },
+      "course5": {
+        "title": "Online Course on Hibernate and JPA 14H",
+        "details": "2025 | OpenWebinars",
+        "link": "https://openwebinars.net/cert/151g"
+      },
+      "course6": {
+        "title": "Intensive Python Course 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/947W7JNBHSZT"
+      },
+      "course7": {
+        "title": "Introduction to Git and GitHub 20H",
+        "details": "2025 | Google (Coursera)",
+        "link": "https://www.coursera.org/account/accomplishments/verify/CLXQMUMRPPL6"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "To show my ambition and future focus, I have used AI to generate a statement of my professional aspirations.",
+    "projection": {
+      "title": "Professional Projection"
+    },
+    "socialmovie": {
+      "title": "SocialMovies",
+      "description": "Android app to check movie information from the TMDB API, save favorites, and follow friends. Developed with Java, Kotlin, and Firebase."
+    },
+    "libreria": {
+      "title": "Online Bookstore",
+      "description": "Professional mini e-commerce built with React + TypeScript + Vite for selling books. The project demonstrates architectural patterns similar to Angular (feature modularization, injectable services, guards, lazy loading) and a robust DX-oriented approach.",
+      "tag1": "Architecture",
+      "tag2": "DX"
+    },
+    "tareas": {
+      "title": "Tasks & Notes",
+      "description": "Web application to manage tasks and notes aimed at people who want to learn modern Angular with a real practical case. The project incorporates standalone components, Signals, Angular Material, i18n, and dual persistence strategies to cover a professional end-to-end workflow."
+    },
+    "prompt": "Click the button to generate a projection of my future skills and areas of interest.",
+    "button": {
+      "default": "Generate Professional Projection",
+      "loading": "Generating..."
+    },
+    "creativity": {
+      "label": "AI Creativity",
+      "more": "More creative"
+    },
+    "errors": {
+      "generationFailed": "Could not generate the statement.",
+      "title": "Error",
+      "description": "There was a problem generating the projection. Please try again.",
+      "fallback": "I will soon be showing my personal projects here. I am learning new technologies and will soon share complete applications in frontend, cloud, and artificial intelligence."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Interested in collaborating or have a question? Do not hesitate to contact me. I am open to new opportunities and always willing to connect with other professionals.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Write your message here..."
+      },
+      "submit": "Send Message",
+      "validation": {
+        "name": "The name must be at least 2 characters long.",
+        "email": "Please enter a valid email.",
+        "message": "The message must be at least 10 characters long."
+      },
+      "toast": {
+        "title": "Message Sent!",
+        "description": "Thank you for contacting me. I will get back to you as soon as possible."
+      }
+    }
+  },
+  "footer": {
+    "text": "Designed and built with passion."
+  }
+}
