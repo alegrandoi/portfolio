@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -62,7 +63,7 @@ export default function Projects() {
     {
       title: t('projects.notas.title'),
       description: t('projects.notas.description'),
-      image: 'https://picsum.photos/seed/notesapp/600/400',
+      image: '/fondo-tareas&notas.png',
       imageHint: 'notes app',
       tags: ['Angular', 'TypeScript', 'SCSS', 'Standalone Components', 'Signals'],
       link: 'https://github.com/alegrandoi/angular-tareas-notas-es',
@@ -103,7 +104,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="rounded-md object-cover"
+                  className="rounded-md object-contain"
                   data-ai-hint={project.imageHint}
                 />
               </div>
