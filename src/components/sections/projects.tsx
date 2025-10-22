@@ -53,6 +53,14 @@ export default function Projects() {
 
   const projects = [
     {
+      title: t('projects.bookstore.title'),
+      description: t('projects.bookstore.description'),
+      image: 'https://picsum.photos/seed/bookstore/600/400',
+      imageHint: 'book store',
+      tags: ['Java', 'Spring Boot', 'MySQL', 'Thymeleaf', 'HTML5', 'CSS3'],
+      link: 'https://github.com/alegrandoi/libreria-enlinea',
+    },
+    {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
       image: '/socialmovie-project.jpg',
@@ -67,6 +75,14 @@ export default function Projects() {
         'TMDB API',
       ],
       link: 'https://github.com/alegrandoi/socialmovie',
+    },
+    {
+      title: t('projects.notesapp.title'),
+      description: t('projects.notesapp.description'),
+      image: 'https://picsum.photos/seed/notesapp/600/400',
+      imageHint: 'notes app',
+      tags: ['Java', 'Android Studio', 'SQLite'],
+      link: 'https://github.com/alegrandoi/tareas-y-notas',
     },
   ];
 

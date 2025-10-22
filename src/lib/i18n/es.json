@@ -135,10 +135,22 @@
       "title": "SocialMovies",
       "description": "App Android para consultar información de películas de la API de TMDB, guardar favoritos y seguir a amigos. Desarrollada con Java, Kotlin y Firebase."
     },
+    "bookstore": {
+      "title": "Librería Online",
+      "description": "Aplicación web para la gestión de una librería, incluyendo inventario, ventas y clientes. Desarrollada con Java, Spring Boot y Thymeleaf."
+    },
+    "notesapp": {
+      "title": "Tareas y Notas",
+      "description": "Aplicación Android sencilla para crear, editar y eliminar notas de texto y listas de tareas, almacenando los datos localmente con SQLite."
+    },
     "prompt": "Haz clic en el botón para generar una proyección de mis futuras habilidades y áreas de interés.",
     "button": {
       "default": "Generar Proyección Profesional",
       "loading": "Generando..."
+    },
+    "creativity": {
+      "label": "Creatividad de la IA ({temp})",
+      "moreCreative": "Más creativo → 1"
     },
     "errors": {
       "generationFailed": "No se pudo generar la declaración.",

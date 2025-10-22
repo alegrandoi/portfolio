@@ -135,10 +135,22 @@
       "title": "SocialMovies",
       "description": "Android app to check movie information from the TMDB API, save favorites, and follow friends. Developed with Java, Kotlin, and Firebase."
     },
+    "bookstore": {
+      "title": "Online Bookstore",
+      "description": "Web application for managing a bookstore, including inventory, sales, and customers. Developed with Java, Spring Boot, and Thymeleaf."
+    },
+    "notesapp": {
+      "title": "Tasks and Notes",
+      "description": "Simple Android application to create, edit, and delete text notes and to-do lists, storing the data locally using SQLite."
+    },
     "prompt": "Click the button to generate a projection of my future skills and areas of interest.",
     "button": {
       "default": "Generate Professional Projection",
       "loading": "Generating..."
+    },
+    "creativity": {
+      "label": "AI Creativity ({temp})",
+      "moreCreative": "More Creative → 1"
     },
     "errors": {
       "generationFailed": "Could not generate the statement.",
