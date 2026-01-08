@@ -1,4 +1,3 @@
-git add .
 # Portfolio Profesional con Next.js e Inteligencia Artificial
 
 Este repositorio contiene el código fuente de un portfolio profesional interactivo, desarrollado para mostrar proyectos, habilidades y experiencia de una manera moderna y atractiva. La aplicación está construida con tecnologías de vanguardia y cuenta con una integración de IA para generar contenido dinámico.
@@ -39,7 +38,7 @@ Este proyecto es una aplicación web moderna, de página única (SPA), construid
 #### Interactividad y Gestión de Estado:
 
 - **Formularios:** **React Hook Form** para gestionar el formulario de contacto.
-- **Validación de Datos:** **Zod** para definir esquemas de validación tanto en el cliente (formularios) como en los flujos de IA.
+- **Validación de Datos:** **Zod** para definir esquemas de validación tanto en el cliente (formularios) como en los fluos de IA.
 - **Internacionalización (i18n):** Implementada con un **React Context** personalizado para el cambio de idioma.
 
 #### Despliegue y Entorno:
