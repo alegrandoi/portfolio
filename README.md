@@ -1,3 +1,4 @@
+git add .
 # Portfolio Profesional con Next.js e Inteligencia Artificial
 
 Este repositorio contiene el código fuente de un portfolio profesional interactivo, desarrollado para mostrar proyectos, habilidades y experiencia de una manera moderna y atractiva. La aplicación está construida con tecnologías de vanguardia y cuenta con una integración de IA para generar contenido dinámico.
