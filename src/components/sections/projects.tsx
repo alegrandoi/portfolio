@@ -21,6 +21,10 @@ import { useI18n } from '@/hooks/use-i18n';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 
+import socialMovieImage from '../../../public/socialmovie-project.jpg';
+import tasksNotesImage from '../../../public/fondo-tareas&notas.png';
+import onlineBookstoreImage from '../../../public/fondo-libreria-enlinea.png';
+
 export default function Projects() {
   const [statement, setStatement] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -55,7 +59,7 @@ export default function Projects() {
     {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
-      image: '/socialmovie-project.jpg',
+      image: socialMovieImage,
       imageHint: 'mobile social',
       tags: [
         'Java',
@@ -71,7 +75,7 @@ export default function Projects() {
     {
       title: t('projects.tasksnotes.title'),
       description: t('projects.tasksnotes.description'),
-      image: '/fondo-tareas&notas.png',
+      image: tasksNotesImage,
       imageHint: 'web application tasks',
       tags: [
         'Angular',
@@ -87,7 +91,7 @@ export default function Projects() {
     {
       title: t('projects.onlinebookstore.title'),
       description: t('projects.onlinebookstore.description'),
-      image: '/fondo-libreria-enlinea.png',
+      image: onlineBookstoreImage,
       imageHint: 'web application ecommerce',
       tags: ['React', 'TypeScript', 'Vite', 'Angular-like Patterns', 'Lazy Loading', 'Guards'],
       link: 'https://github.com/alegrandoi/libreria-enlinea',
@@ -114,6 +118,7 @@ export default function Projects() {
                   fill
                   className="object-contain"
                   data-ai-hint={project.imageHint}
+                  placeholder="blur"
                 />
               </div>
               <div className="flex flex-wrap gap-2">
