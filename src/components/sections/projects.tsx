@@ -21,6 +21,10 @@ import { useI18n } from '@/hooks/use-i18n';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 
+import LibreriaImage from '../../../public/fondo-libreria-enlinea.png';
+import TareasImage from '../../../public/fondo-tareas&notas.png';
+import SocialmovieImage from '../../../public/socialmovie-project.jpg';
+
 export default function Projects() {
   const [statement, setStatement] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -55,7 +59,7 @@ export default function Projects() {
     {
       title: t('projects.libreria.title'),
       description: t('projects.libreria.description'),
-      image: '/fondo-libreria-enlinea.png',
+      image: LibreriaImage,
       imageHint: 'book shop',
       tags: [
         'React',
@@ -69,7 +73,7 @@ export default function Projects() {
     {
       title: t('projects.tareas.title'),
       description: t('projects.tareas.description'),
-      image: '/fondo-tareas&notas.png',
+      image: TareasImage,
       imageHint: 'tasks notes',
       tags: ['Angular', 'TypeScript', 'SCSS', 'Angular Material', 'i18n'],
       link: 'https://github.com/alegrandoi/angular-tareas-notas-es',
@@ -77,7 +81,7 @@ export default function Projects() {
     {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
-      image: '/socialmovie-project.jpg',
+      image: SocialmovieImage,
       imageHint: 'mobile social',
       tags: [
         'Java',
@@ -112,6 +116,7 @@ export default function Projects() {
                   fill
                   className="rounded-md object-contain"
                   data-ai-hint={project.imageHint}
+                  placeholder="blur"
                 />
               </div>
               <div className="flex flex-wrap gap-2">
