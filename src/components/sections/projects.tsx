@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image, { type StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { Loader2, Wand2, Github } from 'lucide-react';
 import SectionWrapper from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
@@ -21,15 +21,13 @@ import { useI18n } from '@/hooks/use-i18n';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 
-import LibreriaImage from '/public/fondo-libreria-enlinea.png';
-import TareasImage from '/public/fondo-tareas&notas.png';
-import SocialmovieImage from '/public/socialmovie-project.jpg';
-
 type Project = {
   title: string;
   description: string;
-  image: StaticImageData;
+  image: string;
   imageHint: string;
+  width: number;
+  height: number;
   tags: string[];
   link: string;
 };
@@ -71,8 +69,10 @@ export default function Projects() {
     {
       title: t('projects.libreria.title'),
       description: t('projects.libreria.description'),
-      image: LibreriaImage,
+      image: '/fondo-libreria-enlinea.png',
       imageHint: 'book shop',
+      width: 1280,
+      height: 720,
       tags: [
         'React',
         'TypeScript',
@@ -85,16 +85,20 @@ export default function Projects() {
     {
       title: t('projects.tareas.title'),
       description: t('projects.tareas.description'),
-      image: TareasImage,
+      image: '/fondo-tareas&notas.png',
       imageHint: 'tasks notes',
+      width: 1280,
+      height: 720,
       tags: ['Angular', 'TypeScript', 'SCSS', 'Angular Material', 'i18n'],
       link: 'https://github.com/alegrandoi/angular-tareas-notas-es',
     },
     {
       title: t('projects.socialmovie.title'),
       description: t('projects.socialmovie.description'),
-      image: SocialmovieImage,
+      image: '/socialmovie-project.jpg',
       imageHint: 'mobile social',
+      width: 1280,
+      height: 720,
       tags: [
         'Java',
         'Android Studio',
@@ -125,10 +129,10 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  fill
+                  width={project.width}
+                  height={project.height}
                   className="rounded-md object-contain"
                   data-ai-hint={project.imageHint}
-                  placeholder="blur"
                 />
               </div>
               <div className="flex flex-wrap gap-2">
