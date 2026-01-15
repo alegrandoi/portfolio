@@ -21,9 +21,9 @@ import { useI18n } from '@/hooks/use-i18n';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 
-import LibreriaImage from '../../../public/fondo-libreria-enlinea.png';
-import TareasImage from '../../../public/fondo-tareas&notas.png';
-import SocialmovieImage from '../../../public/socialmovie-project.jpg';
+import LibreriaImage from '/public/fondo-libreria-enlinea.png';
+import TareasImage from '/public/fondo-tareas&notas.png';
+import SocialmovieImage from '/public/socialmovie-project.jpg';
 
 type Project = {
   title: string;
