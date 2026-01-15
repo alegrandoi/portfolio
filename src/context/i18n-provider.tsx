@@ -23,9 +23,11 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Language>('es');
 
   useEffect(() => {
-    const browserLang = navigator.language.split('-')[0] as Language;
-    if (browserLang === 'en' || browserLang === 'es') {
-      setLang(browserLang);
+    if (typeof window !== 'undefined') {
+      const browserLang = navigator.language.split('-')[0] as Language;
+      if (browserLang === 'en' || browserLang === 'es') {
+        setLang(browserLang);
+      }
     }
   }, []);
 
