@@ -45,7 +45,10 @@ export default function Projects() {
     setIsLoading(true);
     setStatement('');
     try {
-      const result = await generateProjectedStatementAction(lang, temperature[0]);
+      const result = await generateProjectedStatementAction({
+        lang,
+        temperature: temperature[0],
+      });
       if (result.projectedSkillsStatement) {
         setStatement(result.projectedSkillsStatement);
       } else {
