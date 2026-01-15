@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import { Loader2, Wand2, Github } from 'lucide-react';
 import SectionWrapper from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
@@ -24,6 +24,15 @@ import { Label } from '@/components/ui/label';
 import LibreriaImage from '../../../public/fondo-libreria-enlinea.png';
 import TareasImage from '../../../public/fondo-tareas&notas.png';
 import SocialmovieImage from '../../../public/socialmovie-project.jpg';
+
+type Project = {
+  title: string;
+  description: string;
+  image: StaticImageData;
+  imageHint: string;
+  tags: string[];
+  link: string;
+};
 
 export default function Projects() {
   const [statement, setStatement] = useState('');
@@ -55,7 +64,7 @@ export default function Projects() {
     }
   };
 
-  const projects = [
+  const projects: Project[] = [
     {
       title: t('projects.libreria.title'),
       description: t('projects.libreria.description'),
