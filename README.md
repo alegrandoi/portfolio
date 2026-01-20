@@ -64,11 +64,16 @@ Para ejecutar este proyecto en un entorno de desarrollo local, sigue estos pasos
     ```
 
 3.  **Configurar variables de entorno:**
-    Crea un archivo `.env` en la raíz del proyecto y añade tu API Key de Google AI Studio para que Genkit pueda funcionar.
+    Crea un archivo `.env.local` en la raíz del proyecto y añade tu API Key de Google AI Studio para que Genkit pueda funcionar.
 
     ```env
     GEMINI_API_KEY=tu_api_key_aqui
     ```
+
+    **Para obtener tu API Key:**
+    1. Ve a [Google AI Studio](https://aistudio.google.com/app/apikey)
+    2. Crea una nueva API key
+    3. Cópiala en tu archivo `.env.local`
 
 4.  **Ejecutar el servidor de desarrollo:**
     ```bash
@@ -76,4 +81,30 @@ Para ejecutar este proyecto en un entorno de desarrollo local, sigue estos pasos
     ```
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación en funcionamiento.
+
+### 📦 Despliegue en Firebase App Hosting
+
+Para desplegar en Firebase App Hosting:
+
+1. **Configurar el secreto en Firebase:**
+   ```bash
+   # Crear el secreto en Google Cloud Secret Manager
+   echo -n "tu_api_key_de_gemini" | gcloud secrets create gemini-api-key --data-file=-
+   
+   # Dar acceso al servicio de App Hosting
+   gcloud secrets add-iam-policy-binding gemini-api-key \
+     --member="serviceAccount:PROJECT_ID@appspot.gserviceaccount.com" \
+     --role="roles/secretmanager.secretAccessor"
+   ```
+
+2. **Hacer push a tu repositorio:**
+   ```bash
+   git add .
+   git commit -m "Tu mensaje"
+   git push
+   ```
+
+3. Firebase detectará automáticamente el cambio y desplegará tu aplicación.
+
+**Nota:** El archivo `apphosting.yaml` ya está configurado para usar el secreto `gemini-api-key`.
 ```

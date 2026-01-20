@@ -2,13 +2,11 @@
 import {genkit} from 'genkit';
 import {googleAI} from '@genkit-ai/google-genai';
 
-const plugins: ReturnType<typeof googleAI>[] = [];
-
-if (process.env.GEMINI_API_KEY) {
-  plugins.push(googleAI());
-}
-
 export const ai = genkit({
-  plugins: plugins,
-  model: 'googleai/gemini-2.5-flash',
+  plugins: [
+    googleAI({
+      apiKey: process.env.GEMINI_API_KEY,
+    }),
+  ],
+  model: 'googleai/gemini-2.0-flash-exp',
 });
