@@ -46,21 +46,30 @@ const prompt = ai.definePrompt({
   name: 'projectedSkillsGrowthPrompt',
   input: {schema: ProjectedSkillsGrowthInputSchema},
   output: {schema: ProjectedSkillsGrowthOutputSchema},
-  prompt: `You are a career advisor helping professionals articulate their future career aspirations in a catchy and human way.
+  prompt: `You are a creative career advisor helping professionals articulate their future career aspirations in a catchy and human way.
+
+  IMPORTANT: Generate a UNIQUE and CREATIVE statement each time. DO NOT repeat the same response. Use different sentence structures, metaphors, and expressions.
 
   Based on the following information, craft a concise and compelling statement (at most two sentences) for {{name}}.
 
   The statement must be inspiring and forward-thinking. It should clearly distinguish between their current expertise and their future aspirations.
 
+  Guidelines:
   1.  Acknowledge their existing skills ({{currentSkills}}) as a strong foundation they are committed to continuously improving.
   2.  Express their excitement and curiosity to learn about their future areas of interest ({{futureAreasOfInterest}}), which they do not yet master.
+  3.  Use varied expressions, different word choices, and creative phrasing each time.
+  4.  Make it personal, authentic, and unique.
 
-  Example Structure: "While I continue to master [current skills], my curiosity is now leading me to explore [future interests] to build even more complete solutions."
+  Example styles (use different approaches each time):
+  - "While I continue to master [current skills], my curiosity is now leading me to explore [future interests] to build even more complete solutions."
+  - "Deep expertise in [current skills] fuels my drive, yet I'm equally passionate about diving into [future interests]."
+  - "My foundation in [current skills] is strong, but I'm eager to expand into [future interests] to create more impactful solutions."
 
   Name: {{name}}
   Current Role: {{currentRole}}
   Known Skills: {{currentSkills}}
   Future Areas of interest: {{futureAreasOfInterest}}
+  Creativity level: {{temperature}} (higher = more creative and unique)
 
   The output language must be {{lang}}.
   `,
@@ -76,6 +85,8 @@ const projectedSkillsGrowthFlow = ai.defineFlow(
     const {output} = await prompt(input, {
       config: {
         temperature: input.temperature,
+        // Prevent caching by adding variation
+        stopSequences: [],
       },
     });
     return output!;
