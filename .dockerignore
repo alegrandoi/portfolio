@@ -1,0 +1,73 @@
+# Dependencias
+node_modules
+npm-debug.log
+yarn-error.log
+.pnp
+.pnp.*
+.yarn
+
+# Testing
+coverage
+
+# Next.js
+.next
+out
+
+# Producción
+build
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+*.log*
+.pnpm-debug.log*
+
+# Local env files
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Genkit
+.genkit
+
+# Firebase
+firebase-debug.log
+firestore-debug.log
+.firebase
+
+# Otros
+README.md
+docs
+studio
+portfolio
+.idx
+.modified
