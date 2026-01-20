@@ -35,7 +35,7 @@ type Project = {
 export default function Projects() {
   const [statement, setStatement] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [temperature, setTemperature] = useState([0.7]);
+  const [temperature, setTemperature] = useState([0.8]);
   const { toast } = useToast();
   const { t, lang } = useI18n();
 

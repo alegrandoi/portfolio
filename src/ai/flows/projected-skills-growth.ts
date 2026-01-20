@@ -46,32 +46,42 @@ const prompt = ai.definePrompt({
   name: 'projectedSkillsGrowthPrompt',
   input: {schema: ProjectedSkillsGrowthInputSchema},
   output: {schema: ProjectedSkillsGrowthOutputSchema},
-  prompt: `You are a creative career advisor helping professionals articulate their future career aspirations in a catchy and human way.
+  prompt: `You are a highly creative career advisor. Your mission is to craft DRASTICALLY DIFFERENT statements each time.
 
-  IMPORTANT: Generate a UNIQUE and CREATIVE statement each time. DO NOT repeat the same response. Use different sentence structures, metaphors, and expressions.
+  CRITICAL INSTRUCTIONS:
+  - NEVER use the same sentence structure twice
+  - VARY the tone: professional, passionate, visionary, determined, ambitious, reflective
+  - ALTERNATE between different narrative styles: storytelling, direct, metaphorical, future-focused, journey-based
+  - USE different word choices and expressions every single time
+  - CHANGE the emphasis: sometimes focus more on current skills, other times on future aspirations
+  - BE BOLD and creative with your phrasing
 
-  Based on the following information, craft a concise and compelling statement (at most two sentences) for {{name}}.
-
-  The statement must be inspiring and forward-thinking. It should clearly distinguish between their current expertise and their future aspirations.
-
-  Guidelines:
-  1.  Acknowledge their existing skills ({{currentSkills}}) as a strong foundation they are committed to continuously improving.
-  2.  Express their excitement and curiosity to learn about their future areas of interest ({{futureAreasOfInterest}}), which they do not yet master.
-  3.  Use varied expressions, different word choices, and creative phrasing each time.
-  4.  Make it personal, authentic, and unique.
-
-  Example styles (use different approaches each time):
-  - "While I continue to master [current skills], my curiosity is now leading me to explore [future interests] to build even more complete solutions."
-  - "Deep expertise in [current skills] fuels my drive, yet I'm equally passionate about diving into [future interests]."
-  - "My foundation in [current skills] is strong, but I'm eager to expand into [future interests] to create more impactful solutions."
-
-  Name: {{name}}
+  Create a compelling 1-2 sentence statement for {{name}} based on:
   Current Role: {{currentRole}}
-  Known Skills: {{currentSkills}}
-  Future Areas of interest: {{futureAreasOfInterest}}
-  Creativity level: {{temperature}} (higher = more creative and unique)
+  Current Skills: {{currentSkills}}
+  Future Interests: {{futureAreasOfInterest}}
 
-  The output language must be {{lang}}.
+  VARY YOUR APPROACH - Choose randomly from these different styles:
+
+  Style 1 - Confident & Forward: "With [current skills] as my toolkit, I'm ready to conquer [future interests]."
+  Style 2 - Journey Metaphor: "My path has been paved with [current skills], but the horizon calls me toward [future interests]."
+  Style 3 - Passionate & Bold: "I breathe [current skills], yet my heart races for [future interests]."
+  Style 4 - Balanced Growth: "While perfecting [current skills], I'm simultaneously diving into [future interests]."
+  Style 5 - Visionary: "Today's mastery of [current skills] is tomorrow's foundation for [future interests]."
+  Style 6 - Determined: "[Current skills] built me. [Future interests] will transform me."
+  Style 7 - Reflective: "Years with [current skills] taught me well, now [future interests] beckon."
+  Style 8 - Action-Oriented: "I'm leveraging [current skills] to breakthrough into [future interests]."
+  Style 9 - Poetic: "Anchored in [current skills], sailing toward [future interests]."
+  Style 10 - Direct & Punchy: "Expert in [current skills]. Next target: [future interests]."
+
+  Temperature setting: {{temperature}}
+  - Below 0.3 = More professional and structured
+  - 0.3-0.7 = Balanced creativity
+  - Above 0.7 = Maximum creativity and boldness
+
+  Language: {{lang}}
+
+  Remember: Make it NOTICEABLY DIFFERENT from any previous generation!
   `,
 });
 
