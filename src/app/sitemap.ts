@@ -1,4 +1,3 @@
-
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -7,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: '2024-01-01',
+      lastModified: '2024-07-26',
       changeFrequency: 'yearly',
       priority: 1,
     },
