@@ -1,8 +1,8 @@
 
-import {genkit, type Plugin} from 'genkit';
+import {genkit} from 'genkit';
 import {googleAI} from '@genkit-ai/google-genai';
 
-const plugins: Plugin[] = [];
+const plugins: ReturnType<typeof googleAI>[] = [];
 
 if (process.env.GEMINI_API_KEY) {
   plugins.push(googleAI());

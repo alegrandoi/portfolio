@@ -9,7 +9,7 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import {z} from 'zod';
 
 const ProjectedSkillsGrowthInputSchema = z.object({
   name: z.string().describe('The name of the person.'),
